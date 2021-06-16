@@ -785,9 +785,7 @@ class Forgot_Screen(Screen):
 class Gallery(MDApp):
     
     def __init__(self,**kwargs):          
-        self.title='Gallary'
-        self.theme_cls = ThemeManager()        
-                       
+        self.title='Gallary'                        
         super().__init__(**kwargs)
 
     
