@@ -15,6 +15,7 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
+          command: buildozer android debug
           workdir: .
           buildozer_version: stable
 
@@ -22,5 +23,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: package
-          path: ${{ steps.buildozer.outputs.app_folder }}
+          path: ${{ steps.buildozer.outputs.master/app_folder/bin/testapp-0.1-armeabi-v7a-debug.apk }}
 
