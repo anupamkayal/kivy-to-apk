@@ -22,5 +22,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: package
-          path: ${{ steps.buildozer.outputs.master/app_folder/bin/test.apk }}
+          path: ${{ .master/app_folder/bin/test.apk }}
 
